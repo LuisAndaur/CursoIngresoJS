@@ -4,7 +4,27 @@ transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	let num1;
+	let numeroUno;
+	let numeroDos;
+	let resultado;
+	let mensaje;
+
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+
+	numeroUno = parseInt(numeroUno);
+	numeroDos = parseInt(numeroDos);
+
+	resultado = numeroUno + numeroDos;
+	mensaje = "La suma es : " +resultado;
+
+	alert(mensaje);
+
+}
+
+/*
+HECHO CON VIDEO GRABADO
+let num1;
 	let num2;
 	let resultado;
 
@@ -18,5 +38,9 @@ function sumar()
 	resultado = num1 + num2;
 
 	alert("La suma es " +resultado)
-}
+
+	*/
+
+
+
 

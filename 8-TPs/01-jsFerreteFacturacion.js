@@ -5,13 +5,58 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	
+    let precio1;
+    let precio2;
+    let precio3;
+
+    let suma;
+
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+
+    suma = precio1 + precio2 + precio3;
+
+    alert("La suma es " +suma);
+
 }
+
 function Promedio () 
 {
-	
+	let precio1;
+    let precio2;
+    let precio3;
+
+    let promedio;
+
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+
+    promedio = (precio1 + precio2 + precio3)/3;
+
+    alert("El promedio es " +promedio);
+
 }
+
 function PrecioFinal () 
 {
-	
+	let precio1;
+    let precio2;
+    let precio3;
+
+    let precioSuma;
+    let iva;
+    let precioFinal;
+
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+
+    precioSuma = precio1 + precio2 + precio3;
+    iva = (precio1 + precio2 + precio3) * 21 / 100;
+
+    precioFinal = precioSuma + iva;
+
+    alert("El precio final es " +precioFinal);
 }
